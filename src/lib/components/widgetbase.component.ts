@@ -15,6 +15,7 @@ export class WidgetBaseComponent {
 
     constructor() {
 
+        console.log('BaseWidget construction');
         if (window.addEventListener) {
             window.addEventListener('message', () => this.handleMessage(event), false);
             console.log('Event Listener attached');
@@ -28,7 +29,8 @@ export class WidgetBaseComponent {
     }
 
     handleMessage( event) {
-        if (event.origin !== 'http://localhost:4200' && event.origin !== 'http://localhost:5300') {
+        if (event.origin !== 'http://localhost:4200' && event.origin !== 'http://localhost:5200') {
+            console.log('ORIGIN IS NOT GOOD', event.origin);
             return;
         }
 
@@ -44,8 +46,8 @@ export class WidgetBaseComponent {
             return;
         }
 
-        document.getElementById('received-data').innerHTML = 'Message received: ' + method;
-        document.getElementById('payload').innerHTML = JSON.stringify(payload, null, 4);
+        //document.getElementById('received-data').innerHTML = 'Message received: ' + method;
+        //document.getElementById('payload').innerHTML = JSON.stringify(payload, null, 4);
 
         console.log( 'Message received' , method, payload);
         console.log( 'JSON', payload);
