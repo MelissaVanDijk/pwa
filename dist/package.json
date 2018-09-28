@@ -1,0 +1,21 @@
+{
+  "name": "pwa",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "main": "bundles/pwa.umd.js",
+  "module": "fesm5/pwa.js",
+  "es2015": "fesm2015/pwa.js",
+  "esm5": "esm5/pwa.js",
+  "esm2015": "esm2015/pwa.js",
+  "fesm5": "fesm5/pwa.js",
+  "fesm2015": "fesm2015/pwa.js",
+  "typings": "pwa.d.ts",
+  "metadata": "pwa.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
