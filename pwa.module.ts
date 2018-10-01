@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { PwaComponent } from './pwa.component';
 import { WidgetBaseComponent } from './components/widgetbase.component';
 
 @NgModule({
@@ -7,11 +6,9 @@ import { WidgetBaseComponent } from './components/widgetbase.component';
 
   ],
   declarations: [
-    PwaComponent,
     WidgetBaseComponent
   ],
   exports: [
-    PwaComponent,
     WidgetBaseComponent
   ]
 })
