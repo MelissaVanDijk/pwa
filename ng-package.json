@@ -3,6 +3,6 @@
   "dest": "./dist/pwa",
   "deleteDestPath": false,
   "lib": {
-    "entryFile": "public_api.ts"
+    "entryFile": "src/public_api.ts"
   }
 }
